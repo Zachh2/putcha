@@ -46,7 +46,7 @@ module.exports = async ({ api }) => {
 
       async function message(thread) {
         try {
-          api.sendMessage(`Hello Members How are you today?\nKamustahin kayo ulit after 30 minutes`, thread.threadID, (err) => { if (err) return });
+          api.sendMessage(`CHATBOTV5 LUNCHING ON MAY 4 2024\nCOMING SOON`, thread.threadID, (err) => { if (err) return });
         } catch (error) {
           console.error("Error sending a message:", error);
         }

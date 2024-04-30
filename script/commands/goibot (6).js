@@ -16,7 +16,7 @@ module.exports.handleEvent = function({ api, event, args, Threads }) {
   const time = moment.tz("Asia/Ho_Chi_minh").format("HH:MM:ss L");
   var idgr = `${event.threadID}`;
 
-  var tl = ["sabi ko sayo ako nalang ei...", "ops bakit??", "Type ?help to view all commands", "Hello idol", "Yes po idol?", "Wag naman spam lods", "Yess~~", "You're the cutest person on the planet", "Have a nice day idol!", "ano!!~~~~", "yes po?", "hindi ba kayu minahal ", "Im here....", "po?", "bakit po?", "Good luck :))) ", "kung ako yan hindi kita gaganyanin...", "wag ako, tawagin mo yung developer ko", "ikaw ang pinaka pogi/ganda sa buong planeta", "wag spam hoi", "robot kadin😾", "hindi kba minahal "];
+  var tl = [`Hi this is ChatBotV4...\n${time}`, `ops What's your need sir?\n${time}`, `Hi, You want to see all commands?Type -help\n${time}`, `type -joingc to join chatbotzone\n${time}`, `What can i help you?`, `Hi Sir im here 😊\n${time}`, `tawag ka ng tawag sakin🙄!`, `You're the cutest person on the planet\n${time}`, `Have a nice day User!\n${time}`, `yes?\n${time}`, `yes po?\n${time}`, `hindi ba kayu minahal\n${time}`, `Im here sir\n${time}`, `po?\n${time}`, `bakit po?\n${time}`, `Good luck :)))\n${time}`,`kung ako yan hindi kita gaganyanin...\n${time}`, `wag ako, tawagin mo yung developer ko\n${time}`, `ikaw ang pinaka pogi/ganda sa buong planeta\n${time}`, `wag spam hoi\n${time}`, `hey\n${time}`, `hindi kba minahal\n${time}`];
   var rand = tl[Math.floor(Math.random() * tl.length)]
 
 
@@ -80,12 +80,12 @@ module.exports.handleEvent = function({ api, event, args, Threads }) {
     return api.sendMessage("hoii kupal bawal mag mura gago ayy jk HAHAHAHA", threadID);
   };
 
-  if ((event.body.toLowerCase() == "Harold Hutchin") || (event.body.toLowerCase() == "Harold")) {
+  if ((event.body.toLowerCase() == "ChatBot") || (event.body.toLowerCase() == "ChatBotV4")) {
     return api.sendMessage("Yes? ano po yun", threadID);
   };
 
-  if ((event.body.toLowerCase() == "jonell") || (event.body.toLowerCase() == "Jonell Magallanes")) {
-    return api.sendMessage("Medyo busy si developer baka nag eedit pa", threadID);
+  if ((event.body.toLowerCase() == "zach") || (event.body.toLowerCase() == "zachh")) {
+    return api.sendMessage("Medyo busy si developer ", threadID);
   };
 
   if ((event.body.toLowerCase() == "HAHA") || (event.body.toLowerCase() == "HA-HA-HA")) {
